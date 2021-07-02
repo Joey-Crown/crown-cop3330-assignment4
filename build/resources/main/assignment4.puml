@@ -1,0 +1,44 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class ToDoListApplication {
+    + main()
+    + Start()
+    + close() (?)
+}
+
+class ToDoList {
+    - name : String
+    - itemsList: ArrayList<Items>
+
+    + addList() : List
+    + deleteList() : void
+    + editList() : void
+    + saveList()
+    + loadList()
+    + saveAllLists()
+}
+
+class Item {
+    - description: String
+    - date : String
+    - completed: boolean
+
+    + addItem()
+    + removeItem()
+    + editItem()
+    + completeItem()
+    + checkDateFormat()
+}
+
+class ToDoListController {
+    model: toDoList
+
+    'GUI event handlers
+}
+
+ToDoList <--* Item
+ToDoListApplication <|-- ToDoList
+ToDoList <--* ToDoListController
+ToDoListApplication <--* ToDoListController
+@enduml
