@@ -41,9 +41,9 @@
          <menus>
             <Menu mnemonicParsing="false" text="File">
                <items>
-                  <MenuItem fx:id="newList" mnemonicParsing="false" onAction="#newListDialog" text="New List" />
+                  <MenuItem fx:id="newList" mnemonicParsing="false" text="New List" />
                   <MenuItem fx:id="deleteList" mnemonicParsing="false" text="Delete List" />
-                  <Menu fx:id="editList" mnemonicParsing="false" onAction="#displayList" text="Edit List" />
+                  <Menu fx:id="editList" mnemonicParsing="false" text="Edit List" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Close" />
                   <MenuItem mnemonicParsing="false" text="Save" />

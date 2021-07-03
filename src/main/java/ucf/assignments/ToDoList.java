@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class ToDoList {
 
-    Map<String, ArrayList<Item>> listOfItems = new HashMap<String, ArrayList<Item>>();
+    static Map<String, ArrayList<Item>> listOfItems = new HashMap<String, ArrayList<Item>>();
     String name;
 
     public ToDoList(String name) {
