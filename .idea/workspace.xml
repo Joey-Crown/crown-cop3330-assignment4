@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba7499ea-e4bc-47f1-bcf2-6e265fa00d7a" name="Default Changelist" comment="Added new classes and FXML file">
+    <list default="true" id="ba7499ea-e4bc-47f1-bcf2-6e265fa00d7a" name="Default Changelist" comment="Updated Pseudocode for new methods">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/AddItemMockup.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/ToDoList.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/ToDoList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/ToDoListApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/ToDoListApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/ToDoListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/ucf/assignments/ToDoListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/ToDoListMockUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/ToDoListMockUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assignment4.puml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assignment4.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/ucf/assignments/ToDoListMockUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/ucf/assignments/ToDoListMockUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/ToDoList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/ToDoList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/ToDoListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/ToDoListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ucf/assignments/ToDoListApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ucf/assignments/ToDoListApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ToDoListMockUp.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assignment4.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assignment4.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ucf/assignments/ToDoListMockUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ucf/assignments/ToDoListMockUp.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +35,7 @@
       <list>
         <option value="UML Sequence" />
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +56,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/ucf/assignments" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,10 +64,11 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36910996" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\joe\IdeaProjects\crown-cop3330-assignment4\src\main\resources\ucf\assignments" />
       <recent name="C:\Users\Joe\Documents\Programs\Java\crown-cop3330-assignment4\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -66,6 +77,8 @@
   </component>
   <component name="RunManager">
     <configuration name="ToDoListApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/Documents/JavaDevelopment/jdk-16.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ucf.assignments.ToDoListApplication" />
       <module name="crown-cop3330-assignment4.main" />
       <option name="VM_PARAMETERS" value="--module-path C:\Users\Joe\Documents\JavaDevelopment\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml " />
@@ -79,13 +92,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,6 +123,9 @@
       <workItem from="1625114679229" duration="27342000" />
       <workItem from="1625249836413" duration="5353000" />
       <workItem from="1625269864414" duration="7346000" />
+      <workItem from="1625440234243" duration="821000" />
+      <workItem from="1625441071858" duration="4264000" />
+      <workItem from="1625446461549" duration="16685000" />
     </task>
     <task id="LOCAL-00001" summary="Added new classes and FXML file">
       <created>1625267640171</created>
@@ -116,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625267640172</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated Pseudocode for new methods">
+      <created>1625528604650</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625528604650</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +161,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added new classes and FXML file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new classes and FXML file" />
+    <MESSAGE value="Updated Pseudocode for new methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Pseudocode for new methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
