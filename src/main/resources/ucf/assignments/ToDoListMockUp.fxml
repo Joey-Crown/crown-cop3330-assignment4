@@ -32,10 +32,20 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.ToDoListController">
    <children>
       <MenuBar layoutX="-37.0" layoutY="2.0" prefHeight="26.0" prefWidth="600.0" AnchorPane.bottomAnchor="375.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <menus>
@@ -45,9 +55,10 @@
                   <MenuItem fx:id="deleteList" mnemonicParsing="false" text="Delete List" />
                   <Menu fx:id="editList" mnemonicParsing="false" text="Edit List" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
                   <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Save As…" />
+                  <MenuItem mnemonicParsing="false" text="Save All" />
+                  <MenuItem mnemonicParsing="false" text="Load List" />
+                  <MenuItem mnemonicParsing="false" text="Load All Lists" />
                   <SeparatorMenuItem mnemonicParsing="false" />
                   <MenuItem mnemonicParsing="false" text="Quit" />
                </items>
@@ -55,17 +66,11 @@
             <Menu mnemonicParsing="false" text="Edit">
                <items>
                   <MenuItem mnemonicParsing="false" text="Edit Item" />
-                  <MenuItem mnemonicParsing="false" text="Copy Item" />
-                  <MenuItem mnemonicParsing="false" text="Paste Item" />
-                  <MenuItem mnemonicParsing="false" text="Delete Item" />
-                  <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="Select All" />
-                  <MenuItem mnemonicParsing="false" text="Unselect All" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Help">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About TODO LIST" />
+                  <MenuItem mnemonicParsing="false" text="About Application" />
                </items>
             </Menu>
          </menus>
@@ -95,6 +100,16 @@
                               </TableView>
                            </content>
                       </Tab>
+                        <Tab text="Todo List 2">
+                           <content>
+                              <TableView fx:id="tableView1" prefHeight="200.0" prefWidth="200.0">
+                                 <columns>
+                                    <TableColumn fx:id="itemsView1" prefWidth="311.0" text="Items" />
+                                    <TableColumn fx:id="dateView1" prefWidth="106.0" text="Date" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                        </Tab>
                     </tabs>
                   </TabPane>
                </children>
