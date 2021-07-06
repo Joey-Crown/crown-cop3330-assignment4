@@ -1,6 +1,6 @@
 /*
  *  UCF COP3330 Summer 2021 Assignment 4 Solution
- *  Copyright 2021 first_name last_name
+ *  Copyright 2021 Joseph Crown
  */
 package ucf.assignments;
 
